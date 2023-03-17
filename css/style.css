@@ -74,34 +74,6 @@ header h1{
 } */
 
 
-/**
- * Переключаемая боковая панель навигации
- * выдвигающаяся по клику слева
- */
- 
- .nav {
-    /*  ширна произвольная, не стесняйтесь экспериментировать */
-    width: 320px;
-    min-width: 320px;
-    /* фиксируем и выставляем высоту панели на максимум */
-    height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    margin: 0;
-    /* сдвигаем (прячем) панель относительно левого края страницы */
-    right: -300px;
-    /* внутренние отступы */
-    padding: 15px 20px;
-    /* плавный переход смещения панели */
-    -webkit-transition: left 0.3s;
-    -moz-transition: left 0.3s;
-    transition: left 0.3s;
-    /* определяем цвет фона панели */
-    background: #16a085;
-    /* поверх других элементов */
-    z-index: 2000;
-}
  
 /**
  * Переключаемая боковая панель навигации
@@ -119,7 +91,7 @@ header h1{
     bottom: 0;
     margin: 0;
     /* сдвигаем (прячем) панель относительно правого края страницы */
-    right: -320px;
+    right: -250px;
     /* внутренние отступы */
     padding: 15px 20px;
     /* плавный переход смещения панели */
@@ -127,7 +99,7 @@ header h1{
     -moz-transition: right 0.3s;
     transition: right 0.3s;
     /* определяем цвет фона панели */
-    background: #16a085;
+    background: #585858;
     /* поверх других элементов */
     z-index: 2000;
 }
@@ -142,7 +114,7 @@ header h1{
     /* абсолютно позиционируем */
     position: absolute;
     /* относительно правого края панели */
-    right: 320px;
+    right: 280px;
     /* отступ от верхнего края панели */
     top: 1em;
     /* внутренние отступы */
@@ -458,7 +430,7 @@ body {
     bottom: 0;
     height: 1px;
     width: 100%;
-    background: #3bc1a0;
+    background: #e9d57f;
     -webkit-transition: width .5s ease;
     transition: width .5s ease;
 }
@@ -471,7 +443,7 @@ body {
 
 .nav > ul > li > a:hover:before {
     width: 0%;
-    background: #3bc1a0;
+    background: #e9d57f;
     -webkit-transition: width .5s ease;
     transition: width .5s ease;
 }
